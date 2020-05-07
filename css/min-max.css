@@ -1,0 +1,10 @@
+/*
+* minmax(tamaño minimo, tamaño maximo) css grid
+*/
+
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: minmax(200px, 1fr) 1fr; /*Indicamos el tamaño maximo y el minimo con minmax()*/
+    grid-template-rows:minmax(50px, 1fr) 200px ;
+}
