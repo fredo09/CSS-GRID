@@ -1,0 +1,13 @@
+/*
+* codigo CSSGRID creando una grid inicial
+*/
+
+/*Asignado la grid al contenedor*/
+
+.contenedor{
+    display: grid;
+    /*grid-template-columns:100px 100px 100px;*/ /*Especificamos cuantas columnas(VERTICAL) queremos en la grid*/
+    grid-template-columns:100px 1fr 2fr 100px; /*Decimos comosir debe repartir el espacio en la regilla*/
+    grid-template-rows:150px 200px ; /*Espeficicamos el tamñano de las filas(HORIZONTAL) que necesitamos en la grid */
+    grid-gap: 10px;/*Espaciado entre la grids "sustituido por gap:20px*/
+}
