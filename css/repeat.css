@@ -1,0 +1,10 @@
+/*
+* CSS GRID FUNCION REPEAT
+*/
+
+.contenedor{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr); /*Permite repetir el numero de columnas que desee uno*/
+    grid-template-rows: repeat(3, 1fr);
+}
