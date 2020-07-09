@@ -1,0 +1,44 @@
+/**
+* Posicionamineto con CSS GRID
+**/
+
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.contenedor .items {
+    background: #ff8000;
+    /*Trabajando con el posicionamiento donde empeuzar en la linea 1 */
+    /*grid-column-start: 1 ; */
+    
+    /*Trabajando con el posicionamiento donde aqui decimos donde terminara en la linea 2*/
+    /*grid-column-end: 3; */
+    
+    /*Trabajando con las filas*/
+   
+    /* grid-row-start: 1;
+    grid-row-end: 4;*/
+
+    /*Otra forma de llamarlos*/
+    /*grid-column: 1 / 4;
+    grid-row: 1/ 4;*/
+
+    /*
+        - Grid-area -
+        Primer parametro: grid-row-start
+        Segundo parametro: grid-column-start
+        Tercer parametro: grid-row-end
+        Cuarto parametro: grid-column-end
+    */
+
+    /*grid-area: 1 / 1 / 4 / 4;*/
+
+    /*Estirar columnas y filas   - Span -*/
+
+    grid-column: span 3;
+    grid-row: 3 / span 4;
+
+}
